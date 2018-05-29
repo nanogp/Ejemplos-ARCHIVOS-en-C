@@ -11,3 +11,6 @@ int eDato_set_b(eDato*, char*);
 int eDato_get_a(eDato*);
 char* eDato_get_b(eDato*);
 
+
+eDato* new_eDato();
+eDato* new_eDato_parametros(int a, char* b);

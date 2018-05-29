@@ -1,11 +1,12 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <string.h>
 #include "Dato.h"
 
 int eDato_set_a(eDato* dato, int valor)
 {
     int ret = 0;
-    if(dato!=NULL && valor>1500)
+    if(dato!=NULL && valor>0)
     {
         dato->a = valor;
         ret = 1;
@@ -49,3 +50,25 @@ char* eDato_get_b(eDato* dato)
     return valor;
 }
 
+eDato* new_eDato()
+{
+    eDato* retorno;
+
+    retorno = (eDato*)malloc(sizeof(eDato));
+
+    return retorno;
+}
+
+eDato* new_eDato_parametros(int a, char* b)
+{
+    eDato* retorno;
+
+    retorno = new_eDato();
+
+    if(retorno!=NULL)
+    {
+        eDato_set_a(retorno, a);
+        eDato_set_b(retorno, b);
+    }
+    return retorno;
+}

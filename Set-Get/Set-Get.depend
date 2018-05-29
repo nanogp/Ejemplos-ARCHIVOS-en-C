@@ -3,3 +3,16 @@
 	<stdio.h>
 	<stdlib.h>
 
+1527626625 source:d:\github\ejemplos-archivos-en-c\set-get\dato.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Dato.h"
+
+1527626363 d:\github\ejemplos-archivos-en-c\set-get\dato.h
+
+1527626571 source:d:\github\ejemplos-archivos-en-c\set-get\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Dato.h"
+

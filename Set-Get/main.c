@@ -6,16 +6,17 @@
 
 int main()
 {
-    eDato dato;
     eDato* d;
 
-    d=&dato;
+    //d = new_eDato(limiteDato);
+    //eDato_set_a((d+i),(i+1)*2);
+    //eDato_set_b((d+i),"hola");
 
-    eDato_set_a(d,1800);
+    //printf("a:%d b:%s", eDato_get_a(d+i), eDato_get_b(d+i));
 
-    eDato_set_b(d,"hola");
+    d = new_eDato_parametros(25, "al toque perro");
 
-    printf("%d--%s", eDato_get_a(d),eDato_get_b(d));
+    printf("a:%d b:%s", eDato_get_a(d), eDato_get_b(d));
 
     return 0;
 }
